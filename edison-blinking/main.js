@@ -1,15 +1,31 @@
-var m = require('mraa'); //require mraa
-console.log('MRAA Version: ' + m.getVersion()); //write the mraa version to the console
+var m = require('mraa'); //IO Library
+var app = require('express')(); //Express Library
+var server = require('http').Server(app); //Create HTTP instance
 
-var myLed = new m.Gpio(13); //LED hooked up to digital pin 13 (or built in pin on Galileo Gen1 & Gen2)
+var io = require('socket.io')(server); //Socket.IO Library
+
+var blinkInterval = 1000; //set default blink interval to 1000 milliseconds (1 second)
+var ledState = 1; //set default LED state
+
+var myLed = new m.Gpio(13); //LED hooked up to digital pin 13
 myLed.dir(m.DIR_OUT); //set the gpio direction to output
-var ledState = true; //Boolean to hold the state of Led
 
-periodicActivity(); //call the periodicActivity function
+app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/index.html'); //serve the static html file
+});
 
-function periodicActivity()
-{
-  myLed.write(ledState?1:0); //if ledState is true then write a '1' (high) otherwise write a '0' (low)
-  ledState = !ledState; //invert the ledState
-  setTimeout(periodicActivity,1000); //call the indicated function after 1 second (1000 milliseconds)
+io.on('connection', function(socket){
+  socket.on('changeBlinkInterval', function(data){ //on incoming websocket message...
+    blinkInterval = data; //update blink interval
+  });
+});
+
+server.listen(3000); //run on port 3000
+
+blink(); //start the blink function
+
+function blink(){
+  myLed.write(ledState); //write the LED state
+  ledState = 1 - ledState; //toggle LED state
+  setTimeout(blink,blinkInterval); //recursively toggle pin state with timeout set to blink interval
 }
