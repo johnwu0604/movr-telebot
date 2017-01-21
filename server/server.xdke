@@ -1,0 +1,134 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1485040896000,
+        "modified": 1485040896000,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1485040896000,
+        "modified": 1485040896000,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "README.md": {
+        "previousModTime": 1485040896000,
+        "modified": 1485040896000,
+        "seen": true,
+        "name": "README.md"
+      },
+      "icon.png": {
+        "previousModTime": 1485040896000,
+        "modified": 1485040896000,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "index.html": {
+        "previousModTime": 1485041011000,
+        "modified": 1485041011000,
+        "seen": true,
+        "name": "index.html"
+      },
+      "main.js": {
+        "previousModTime": 1485040960000,
+        "modified": 1485040960000,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1485040980000,
+        "modified": 1485040980000,
+        "seen": true,
+        "name": "package.json"
+      },
+      "server.xdk": {
+        "previousModTime": 1485040897000,
+        "modified": 1485040897000,
+        "seen": true,
+        "name": "server.xdk"
+      },
+      "server.xdke": {
+        "previousModTime": 1485040899000,
+        "modified": 1485040899000,
+        "seen": true,
+        "name": "server.xdke"
+      },
+      ".idea/compiler.xml": {
+        "previousModTime": 1485040950000,
+        "modified": 1485040950000,
+        "seen": true,
+        "name": ".idea/compiler.xml"
+      },
+      ".idea/misc.xml": {
+        "previousModTime": 1485040950000,
+        "modified": 1485040950000,
+        "seen": true,
+        "name": ".idea/misc.xml"
+      },
+      ".idea/modules.xml": {
+        "previousModTime": 1485040950000,
+        "modified": 1485040950000,
+        "seen": true,
+        "name": ".idea/modules.xml"
+      },
+      ".idea/server.iml": {
+        "previousModTime": 1485040950000,
+        "modified": 1485040950000,
+        "seen": true,
+        "name": ".idea/server.iml"
+      },
+      ".idea/workspace.xml": {
+        "previousModTime": 1485041059000,
+        "modified": 1485041059000,
+        "seen": true,
+        "name": ".idea/workspace.xml"
+      },
+      ".idea/copyright/profiles_settings.xml": {
+        "previousModTime": 1485040950000,
+        "modified": 1485040950000,
+        "seen": true,
+        "name": ".idea/copyright/profiles_settings.xml"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1485040896000,
+        "modified": 1485040896000,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "LICENSE.md": {
+        "previousModTime": 1485041209602
+      },
+      "README.md": {
+        "previousModTime": 1485041209602
+      },
+      "icon.png": {
+        "previousModTime": 1485041209602
+      },
+      "index.html": {
+        "previousModTime": 1485041209602
+      },
+      "main.js": {
+        "previousModTime": 1485041209602
+      },
+      "package.json": {
+        "previousModTime": 1485041209602
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1485041209602
+      }
+    }
+  }
+}

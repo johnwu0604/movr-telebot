@@ -7,5 +7,149 @@
   },
   "editorTab": {
     "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1485032743000,
+        "modified": 1485032743000,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1485032743000,
+        "modified": 1485032743000,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "README.md": {
+        "previousModTime": 1485032743000,
+        "modified": 1485032743000,
+        "seen": true,
+        "name": "README.md"
+      },
+      "cfg-app-platform.js": {
+        "previousModTime": 1485032743000,
+        "modified": 1485032743000,
+        "seen": true,
+        "name": "cfg-app-platform.js"
+      },
+      "edison-blinking.iml": {
+        "previousModTime": 1485037592000,
+        "modified": 1485037592000,
+        "seen": true,
+        "name": "edison-blinking.iml"
+      },
+      "edison-blinking.xdk": {
+        "previousModTime": 1485032744000,
+        "modified": 1485032744000,
+        "seen": true,
+        "name": "edison-blinking.xdk"
+      },
+      "edison-blinking.xdke": {
+        "previousModTime": 1485040213000,
+        "modified": 1485040213000,
+        "seen": true,
+        "name": "edison-blinking.xdke"
+      },
+      "icon.png": {
+        "previousModTime": 1485032743000,
+        "modified": 1485032743000,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "index.html": {
+        "previousModTime": 1485039243000,
+        "modified": 1485039243000,
+        "seen": true,
+        "name": "index.html"
+      },
+      "main.js": {
+        "previousModTime": 1485040255000,
+        "modified": 1485040255000,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1485037780000,
+        "modified": 1485037780000,
+        "seen": true,
+        "name": "package.json"
+      },
+      ".idea/compiler.xml": {
+        "previousModTime": 1485037591000,
+        "modified": 1485037591000,
+        "seen": true,
+        "name": ".idea/compiler.xml"
+      },
+      ".idea/misc.xml": {
+        "previousModTime": 1485037591000,
+        "modified": 1485037591000,
+        "seen": true,
+        "name": ".idea/misc.xml"
+      },
+      ".idea/modules.xml": {
+        "previousModTime": 1485037592000,
+        "modified": 1485037592000,
+        "seen": true,
+        "name": ".idea/modules.xml"
+      },
+      ".idea/workspace.xml": {
+        "previousModTime": 1485040260000,
+        "modified": 1485040260000,
+        "seen": true,
+        "name": ".idea/workspace.xml"
+      },
+      ".idea/copyright/profiles_settings.xml": {
+        "previousModTime": 1485037591000,
+        "modified": 1485037591000,
+        "seen": true,
+        "name": ".idea/copyright/profiles_settings.xml"
+      },
+      "utl/version-compare.js": {
+        "previousModTime": 1485032743000,
+        "modified": 1485032743000,
+        "seen": true,
+        "name": "utl/version-compare.js"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1485032744000,
+        "modified": 1485032744000,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "LICENSE.md": {
+        "previousModTime": 1485040315157
+      },
+      "README.md": {
+        "previousModTime": 1485040315157
+      },
+      "cfg-app-platform.js": {
+        "previousModTime": 1485040315157
+      },
+      "edison-blinking.iml": {
+        "previousModTime": 1485040315157
+      },
+      "icon.png": {
+        "previousModTime": 1485040315157
+      },
+      "index.html": {
+        "previousModTime": 1485040315157
+      },
+      "main.js": {
+        "previousModTime": 1485040315157
+      },
+      "package.json": {
+        "previousModTime": 1485040315157
+      },
+      "utl/version-compare.js": {
+        "previousModTime": 1485040315157
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1485040315157
+      }
+    }
   }
 }
