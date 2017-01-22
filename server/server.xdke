@@ -11,98 +11,98 @@
   "iot-tab": {
     "fileStatus": {
       ".gitignore": {
-        "previousModTime": 1485040896000,
-        "modified": 1485040896000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": ".gitignore"
       },
       "LICENSE.md": {
-        "previousModTime": 1485040896000,
-        "modified": 1485040896000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": "LICENSE.md"
       },
       "README.md": {
-        "previousModTime": 1485040896000,
-        "modified": 1485040896000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": "README.md"
       },
       "icon.png": {
-        "previousModTime": 1485040896000,
-        "modified": 1485040896000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": "icon.png"
       },
       "index.html": {
-        "previousModTime": 1485049841000,
-        "modified": 1485049841000,
+        "previousModTime": 1485090209000,
+        "modified": 1485090209000,
         "seen": true,
         "name": "index.html"
       },
       "main.js": {
-        "previousModTime": 1485049731000,
-        "modified": 1485049731000,
+        "previousModTime": 1485089853000,
+        "modified": 1485089853000,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1485040980000,
-        "modified": 1485040980000,
+        "previousModTime": 1485088620000,
+        "modified": 1485088620000,
         "seen": true,
         "name": "package.json"
       },
       "server.xdk": {
-        "previousModTime": 1485040897000,
-        "modified": 1485040897000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": "server.xdk"
       },
       "server.xdke": {
-        "previousModTime": 1485049426000,
-        "modified": 1485049426000,
+        "previousModTime": 1485090217000,
+        "modified": 1485090217000,
         "seen": true,
         "name": "server.xdke"
       },
       ".idea/compiler.xml": {
-        "previousModTime": 1485040950000,
-        "modified": 1485040950000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": ".idea/compiler.xml"
       },
       ".idea/misc.xml": {
-        "previousModTime": 1485040950000,
-        "modified": 1485040950000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": ".idea/misc.xml"
       },
       ".idea/modules.xml": {
-        "previousModTime": 1485040950000,
-        "modified": 1485040950000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": ".idea/modules.xml"
       },
       ".idea/server.iml": {
-        "previousModTime": 1485040950000,
-        "modified": 1485040950000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": ".idea/server.iml"
       },
       ".idea/workspace.xml": {
-        "previousModTime": 1485049870000,
-        "modified": 1485049870000,
+        "previousModTime": 1485090408000,
+        "modified": 1485090408000,
         "seen": true,
         "name": ".idea/workspace.xml"
       },
       ".idea/copyright/profiles_settings.xml": {
-        "previousModTime": 1485040950000,
-        "modified": 1485040950000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": ".idea/copyright/profiles_settings.xml"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1485040896000,
-        "modified": 1485040896000,
+        "previousModTime": 1485074568000,
+        "modified": 1485074568000,
         "seen": true,
         "name": "xdk/project-info.json"
       },
@@ -113,13 +113,6 @@
         "name": "stylesheet.css"
       }
     },
-    "boardFileStatus": {
-      "index.html": {
-        "previousModTime": 1485049873237
-      },
-      "main.js": {
-        "previousModTime": 1485049873237
-      }
-    }
+    "boardFileStatus": {}
   }
 }

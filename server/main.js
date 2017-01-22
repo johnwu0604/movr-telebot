@@ -1,8 +1,7 @@
 var m = require('mraa'); //IO Library
-var app = require('express')(); //Express Library
-var server = require('http').Server(app); //Create HTTP instance
-
-var io = require('socket.io')(server); //Socket.IO Library
+var app = require('express')();
+var server = require('http').createServer(app);
+var io = require('socket.io').listen(server);
 
 // on values
 var isLeftMotorOn = 0;
