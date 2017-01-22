@@ -35,14 +35,14 @@
         "name": "icon.png"
       },
       "index.html": {
-        "previousModTime": 1485041011000,
-        "modified": 1485041011000,
+        "previousModTime": 1485049255000,
+        "modified": 1485049255000,
         "seen": true,
         "name": "index.html"
       },
       "main.js": {
-        "previousModTime": 1485040960000,
-        "modified": 1485040960000,
+        "previousModTime": 1485048369000,
+        "modified": 1485048369000,
         "seen": true,
         "name": "main.js"
       },
@@ -59,8 +59,8 @@
         "name": "server.xdk"
       },
       "server.xdke": {
-        "previousModTime": 1485040899000,
-        "modified": 1485040899000,
+        "previousModTime": 1485049265000,
+        "modified": 1485049265000,
         "seen": true,
         "name": "server.xdke"
       },
@@ -89,8 +89,8 @@
         "name": ".idea/server.iml"
       },
       ".idea/workspace.xml": {
-        "previousModTime": 1485041059000,
-        "modified": 1485041059000,
+        "previousModTime": 1485049261000,
+        "modified": 1485049261000,
         "seen": true,
         "name": ".idea/workspace.xml"
       },
@@ -105,30 +105,14 @@
         "modified": 1485040896000,
         "seen": true,
         "name": "xdk/project-info.json"
+      },
+      "stylesheet.css": {
+        "previousModTime": 1485045734000,
+        "modified": 1485045734000,
+        "seen": true,
+        "name": "stylesheet.css"
       }
     },
-    "boardFileStatus": {
-      "LICENSE.md": {
-        "previousModTime": 1485041209602
-      },
-      "README.md": {
-        "previousModTime": 1485041209602
-      },
-      "icon.png": {
-        "previousModTime": 1485041209602
-      },
-      "index.html": {
-        "previousModTime": 1485041209602
-      },
-      "main.js": {
-        "previousModTime": 1485041209602
-      },
-      "package.json": {
-        "previousModTime": 1485041209602
-      },
-      "xdk/project-info.json": {
-        "previousModTime": 1485041209602
-      }
-    }
+    "boardFileStatus": {}
   }
 }

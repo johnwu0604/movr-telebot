@@ -4,11 +4,15 @@ var server = require('http').Server(app); //Create HTTP instance
 
 var io = require('socket.io')(server); //Socket.IO Library
 
-var blinkInterval = 1000; //set default blink interval to 1000 milliseconds (1 second)
-var ledState = 1; //set default LED state
+// on values
+var isLeftMotorOn = 0;
+var isRightMotorOn = 0;
 
-var myLed = new m.Gpio(13); //LED hooked up to digital pin 13
-myLed.dir(m.DIR_OUT); //set the gpio direction to output
+// motors
+var myLeftMotor = new m.Gpio(13); //left motor hooked up to digital pin 13
+var myRightMotor = new m.Gpio(12); //right motor hooked up to digital pin 12
+myLeftMotor.dir(m.DIR_OUT); //set the gpio direction to output
+myRightMotor.dir(m.DIR_OUT); //set the gpio direction to output
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html'); //serve the static html file
@@ -16,16 +20,19 @@ app.get('/', function (req, res) {
 
 io.on('connection', function(socket){
     socket.on('changeBlinkInterval', function(data){ //on incoming websocket message...
-        blinkInterval = data; //update blink interval
+        isLeftMotorOn = data; //update on value
+        isRightMotorOn = data; //update on value
     });
 });
 
+runMotors();
+
 server.listen(3000); //run on port 3000
 
-blink(); //start the blink function
+runMotors(); //start the blink function
 
-function blink(){
-    myLed.write(ledState); //write the LED state
-    ledState = 1 - ledState; //toggle LED state
-    setTimeout(blink,blinkInterval); //recursively toggle pin state with timeout set to blink interval
+function runMotors(){
+    myLeftMotor.write(isLeftMotorOn);
+    myRightMotor.write(isRightMotorOn);
+    setTimeout(runMotors,isLeftMotorOn); //recursively toggle pin state with timeout set to blink interval
 }
