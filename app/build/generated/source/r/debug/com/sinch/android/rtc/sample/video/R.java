@@ -37,24 +37,27 @@ public final class R {
         public static final int startbg=0x7f020012;
     }
     public static final class id {
-        public static final int answerButton=0x7f080007;
-        public static final int bottomPanel=0x7f080005;
-        public static final int callButton=0x7f080010;
+        public static final int answerButton=0x7f08000a;
+        public static final int bottomPanel=0x7f080008;
+        public static final int callButton=0x7f080013;
         public static final int callDuration=0x7f080002;
-        public static final int callName=0x7f08000d;
+        public static final int callName=0x7f080010;
         public static final int callState=0x7f080001;
-        public static final int declineButton=0x7f080008;
-        public static final int hangupButton=0x7f080006;
-        public static final int infoText=0x7f08000e;
+        public static final int declineButton=0x7f08000b;
+        public static final int forwardButton=0x7f080006;
+        public static final int hangupButton=0x7f080009;
+        public static final int infoText=0x7f080011;
+        public static final int leftButton=0x7f080007;
         public static final int localVideo=0x7f080004;
-        public static final int loggedInName=0x7f08000f;
-        public static final int loginButton=0x7f08000b;
-        public static final int loginName=0x7f08000a;
-        public static final int numberInputLayout=0x7f08000c;
+        public static final int loggedInName=0x7f080012;
+        public static final int loginButton=0x7f08000e;
+        public static final int loginName=0x7f08000d;
+        public static final int numberInputLayout=0x7f08000f;
         public static final int remoteUser=0x7f080000;
         public static final int remoteVideo=0x7f080003;
-        public static final int stopButton=0x7f080011;
-        public static final int textView=0x7f080009;
+        public static final int rightButton=0x7f080005;
+        public static final int stopButton=0x7f080014;
+        public static final int textView=0x7f08000c;
     }
     public static final class layout {
         public static final int callscreen=0x7f030000;

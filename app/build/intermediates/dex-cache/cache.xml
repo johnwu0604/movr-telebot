@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/Nabillionaire/Desktop/telebot/app/libs/sinch-android-rtc-3.9.10.jar"
+        jar="/Users/JohnWu/Documents/Projects/telebot/app/libs/sinch-android-rtc-3.9.10.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="6b90fc6988643fb7d173d85a3c52227778978715">
-        <dex dex="/Users/Nabillionaire/Desktop/telebot/app/build/intermediates/pre-dexed/debug/sinch-android-rtc-3.9.10-18f594e761c6a547ac700f6706476e41638cf5bb.jar" />
+        <dex dex="/Users/JohnWu/Documents/Projects/telebot/app/build/intermediates/pre-dexed/debug/sinch-android-rtc-3.9.10-c7babe6a6148c43b098fab51e4e2fdc91cfea03b.jar" />
     </item>
 
 </items>

@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Ringing"
-                android:textColor="@color/sinch_purple"
+                android:textColor="#ab0101"
                 android:textSize="16sp"
                 android:textAllCaps="true"
                 />
@@ -44,7 +44,7 @@
                 android:layout_marginTop="4dp"
                 android:text="00:00"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/sinch_purple"
+                android:textColor="#ab0101"
                 android:textSize="16sp"/>
 
     </LinearLayout>
@@ -62,7 +62,39 @@
 
         <RelativeLayout android:id="@+id/localVideo" android:layout_width="150dp"
                         android:layout_alignParentRight="true" android:layout_height="200dp"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true" >
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right"
+                android:id="@+id/rightButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forward"
+            android:id="@+id/forwardButton"
+            android:layout_below="@+id/remoteVideo"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:id="@+id/leftButton"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/remoteVideo"
+            android:layout_toEndOf="@+id/remoteVideo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp" />
 
     </RelativeLayout>
 
@@ -84,4 +116,4 @@
     </RelativeLayout>
 
 </LinearLayout>
-<!-- From: file:/Users/Nabillionaire/Desktop/telebot/app/res/layout/callscreen.xml -->
+<!-- From: file:/Users/JohnWu/Documents/Projects/telebot/app/res/layout/callscreen.xml -->
