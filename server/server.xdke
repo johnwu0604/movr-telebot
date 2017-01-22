@@ -35,14 +35,14 @@
         "name": "icon.png"
       },
       "index.html": {
-        "previousModTime": 1485049255000,
-        "modified": 1485049255000,
+        "previousModTime": 1485049397000,
+        "modified": 1485049397000,
         "seen": true,
         "name": "index.html"
       },
       "main.js": {
-        "previousModTime": 1485048369000,
-        "modified": 1485048369000,
+        "previousModTime": 1485049409000,
+        "modified": 1485049409000,
         "seen": true,
         "name": "main.js"
       },
@@ -59,8 +59,8 @@
         "name": "server.xdk"
       },
       "server.xdke": {
-        "previousModTime": 1485049265000,
-        "modified": 1485049265000,
+        "previousModTime": 1485049268000,
+        "modified": 1485049268000,
         "seen": true,
         "name": "server.xdke"
       },
@@ -89,8 +89,8 @@
         "name": ".idea/server.iml"
       },
       ".idea/workspace.xml": {
-        "previousModTime": 1485049261000,
-        "modified": 1485049261000,
+        "previousModTime": 1485049424000,
+        "modified": 1485049424000,
         "seen": true,
         "name": ".idea/workspace.xml"
       },
@@ -113,6 +113,13 @@
         "name": "stylesheet.css"
       }
     },
-    "boardFileStatus": {}
+    "boardFileStatus": {
+      "index.html": {
+        "previousModTime": 1485049426436
+      },
+      "main.js": {
+        "previousModTime": 1485049426436
+      }
+    }
   }
 }

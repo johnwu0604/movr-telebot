@@ -19,8 +19,13 @@ app.get('/', function (req, res) {
 });
 
 io.on('connection', function(socket){
-    socket.on('changeBlinkInterval', function(data){ //on incoming websocket message...
+    socket.on('leftMotor', function(data){ //on incoming websocket message...
         isLeftMotorOn = data; //update on value
+        //isRightMotorOn = data; //update on value
+    });
+
+    socket.on('rightMotor', function(data){ //on incoming websocket message...
+        //isLeftMotorOn = data; //update on value
         isRightMotorOn = data; //update on value
     });
 });

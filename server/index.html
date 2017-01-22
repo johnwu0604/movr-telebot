@@ -17,18 +17,18 @@
             var socket = io.connect('http://172.31.195.106:3000');
             $("body").keydown(function(e) {
                 if(e.keyCode == 37) { // left
-                    socket.emit('changeBlinkInterval',1);
+                    socket.emit('leftMotor',1);
                 }
                 else if(e.keyCode == 39) { // right
-                    socket.emit('changeBlinkInterval',1);
+                    socket.emit('rightMotor',1);
                 }
 
                 $("body").keyup(function(e) {
                     if(e.keyCode == 37) { // left
-                        socket.emit('changeBlinkInterval',0);
+                        socket.emit('leftMotor',0);
                     }
                     else if(e.keyCode == 39) { // right
-                        socket.emit('changeBlinkInterval',0);
+                        socket.emit('rightMotor',0);
                     }
                 });
 
