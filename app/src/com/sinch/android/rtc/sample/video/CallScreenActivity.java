@@ -80,10 +80,14 @@ public class CallScreenActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
-
+        Log.d("Socket url", "http://172.31.195.106:3000");
         // connect socket
         try {
-            socket = new SocketIO("http://172.31.195.106:3000");
+            String host = "http://172.31.195.106:3000";
+            //String cookie = CookieManager.getInstance().getCookie(host);
+
+            socket = new SocketIO(host);
+            //socket.addHeader("Cookie", cookie);
             socket.connect(new IOCallback() {
                 @Override
                 public void on(String event, IOAcknowledge ack, Object... args) {
@@ -98,11 +102,15 @@ public class CallScreenActivity extends BaseActivity {
                 @Override
                 public void onMessage(String data, IOAcknowledge ack) {}
                 @Override
-                public void onError(SocketIOException socketIOException) {}
+                public void onError(SocketIOException socketIOException) {
+                    Log.d("Error", socketIOException.toString());
+                }
                 @Override
                 public void onDisconnect() {}
                 @Override
-                public void onConnect() {}
+                public void onConnect() {
+                    Log.d("Success", "Connected");
+                }
             });
         }catch(Exception e){
 
@@ -155,19 +163,26 @@ public class CallScreenActivity extends BaseActivity {
         });
 
         // forward logic
-        forwardButton.setOnTouchListener(new View.OnTouchListener() {
+//        forwardButton.setOnTouchListener(new View.OnTouchListener() {
+//
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                if(event.getAction() == MotionEvent.ACTION_DOWN){
+//                    socket.emit("straight", 1);
+//                }
+//                if(event.getAction() == MotionEvent.ACTION_UP){
+//                    socket.emit("straight", 0);
+//                }
+//                return true;
+//            }
+//
+//        });
 
+        forwardButton.setOnClickListener(new OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction() == MotionEvent.ACTION_DOWN){
-                    socket.emit("straight", 1);
-                }
-                if(event.getAction() == MotionEvent.ACTION_UP){
-                    socket.emit("straight", 0);
-                }
-                return true;
+            public void onClick(View v) {
+                socket.emit("straight", 1);
             }
-
         });
 
         endCallButton.setOnClickListener(new OnClickListener() {
