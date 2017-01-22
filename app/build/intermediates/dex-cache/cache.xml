@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/Nabillionaire/Desktop/telebot/app/libs/socketio.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="745c40b09eb9ea2582c64b99d00a2d0e3dc14390">
-        <dex dex="/Users/Nabillionaire/Desktop/telebot/app/build/intermediates/pre-dexed/debug/socketio-37b0f641a16e3c2d354914db7b45e647756fc3d7.jar" />
-    </item>
-    <item
-        jar="/Users/Nabillionaire/Desktop/telebot/app/libs/sinch-android-rtc-3.9.10.jar"
+        jar="C:\Users\Frank\Desktop\telebot\app\libs\sinch-android-rtc-3.9.10.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="6b90fc6988643fb7d173d85a3c52227778978715">
-        <dex dex="/Users/Nabillionaire/Desktop/telebot/app/build/intermediates/pre-dexed/debug/sinch-android-rtc-3.9.10-18f594e761c6a547ac700f6706476e41638cf5bb.jar" />
+        <dex dex="C:\Users\Frank\Desktop\telebot\app\build\intermediates\pre-dexed\debug\sinch-android-rtc-3.9.10-50bac8770689eaf46e28d8c0909b7e534823889b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Frank\Desktop\telebot\app\libs\socketio.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="745c40b09eb9ea2582c64b99d00a2d0e3dc14390">
+        <dex dex="C:\Users\Frank\Desktop\telebot\app\build\intermediates\pre-dexed\debug\socketio-8812f69aa640f80d99ee809dd310bee474dc10fd.jar" />
     </item>
 
 </items>
