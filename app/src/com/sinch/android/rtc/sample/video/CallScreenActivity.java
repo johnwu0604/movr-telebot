@@ -1,16 +1,9 @@
 package com.sinch.android.rtc.sample.video;
 
-import com.sinch.android.rtc.AudioController;
-import com.sinch.android.rtc.PushPair;
-import com.sinch.android.rtc.calling.Call;
-import com.sinch.android.rtc.calling.CallEndCause;
-import com.sinch.android.rtc.calling.CallState;
-import com.sinch.android.rtc.video.VideoCallListener;
-import com.sinch.android.rtc.video.VideoController;
-
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -19,16 +12,33 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.sinch.android.rtc.AudioController;
+import com.sinch.android.rtc.PushPair;
+import com.sinch.android.rtc.calling.Call;
+import com.sinch.android.rtc.calling.CallEndCause;
+import com.sinch.android.rtc.calling.CallState;
+import com.sinch.android.rtc.video.VideoCallListener;
+import com.sinch.android.rtc.video.VideoController;
+
+import org.json.JSONObject;
+
 import java.util.List;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import io.socket.IOAcknowledge;
+import io.socket.IOCallback;
+import io.socket.SocketIO;
+import io.socket.SocketIOException;
 
 public class CallScreenActivity extends BaseActivity {
 
     static final String TAG = CallScreenActivity.class.getSimpleName();
     static final String CALL_START_TIME = "callStartTime";
     static final String ADDED_LISTENER = "addedListener";
+
+    static SocketIO socket;
 
     private AudioPlayer mAudioPlayer;
     private Timer mTimer;
@@ -69,7 +79,35 @@ public class CallScreenActivity extends BaseActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
+
+        // connect socket
+        try {
+            socket = new SocketIO("http://172.31.195.106:3000");
+            socket.connect(new IOCallback() {
+                @Override
+                public void on(String event, IOAcknowledge ack, Object... args) {
+                    if ("echo back".equals(event) && args.length > 0) {
+                        Log.d("SocketIO", "" + args[0]);
+                        // -> "hello"
+                    }
+                }
+
+                @Override
+                public void onMessage(JSONObject json, IOAcknowledge ack) {}
+                @Override
+                public void onMessage(String data, IOAcknowledge ack) {}
+                @Override
+                public void onError(SocketIOException socketIOException) {}
+                @Override
+                public void onDisconnect() {}
+                @Override
+                public void onConnect() {}
+            });
+        }catch(Exception e){
+
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.callscreen);
 
@@ -78,6 +116,59 @@ public class CallScreenActivity extends BaseActivity {
         mCallerName = (TextView) findViewById(R.id.remoteUser);
         mCallState = (TextView) findViewById(R.id.callState);
         Button endCallButton = (Button) findViewById(R.id.hangupButton);
+
+        // Control buttons: left, forward, right
+        Button leftButton = (Button) findViewById(R.id.leftButton);
+        Button forwardButton = (Button) findViewById(R.id.forwardButton);
+        Button rightButton = (Button) findViewById(R.id.rightButton);
+
+        // leftButton logic
+        leftButton.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN){
+                    socket.emit("left", 1);
+                }
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    socket.emit("left", 0);
+                }
+                return true;
+            }
+
+        });
+
+        // rightButton logic
+        rightButton.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN){
+                    socket.emit("right", 1);
+                }
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    socket.emit("right", 0);
+                }
+                return true;
+            }
+
+        });
+
+        // forward logic
+        forwardButton.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN){
+                    socket.emit("straight", 1);
+                }
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    socket.emit("straight", 0);
+                }
+                return true;
+            }
+
+        });
 
         endCallButton.setOnClickListener(new OnClickListener() {
             @Override
