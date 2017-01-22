@@ -8,11 +8,11 @@
 <p>Our MOVR Telebot project is a combination of an Android application, an Intel Edison-based apparatus. When connected in a video call, callers on both ends can control the robot remotely through the application. The communication between the application and the microcontroller is established on Wi-Fi.</p>
 
 #How we built it
-<p>The basis of our application begins with the Intel Edison board which we programmed using node.js.<br>
+<p>The basis of our application begins with the Intel Edison board which we programmed using node.js.<br><br>
 
 Hardware: <br>
 
-Apart from the Intel Edison board, we used limited materials such as DC motors, a breadboard, popsicle sticks and cardboard to build our vehicle. We used duct tape to solidify the structure, and on top of that, we used EV3 Lego wheels. The circuit simply uses the digital pins on the Edison to receive commands from the Android application, and the IoT capability of the microcontroller let us set up a wiFi connection between the user and the driving system. <br>
+Apart from the Intel Edison board, we used limited materials such as DC motors, a breadboard, popsicle sticks and cardboard to build our vehicle. We used duct tape to solidify the structure, and on top of that, we used EV3 Lego wheels. The circuit simply uses the digital pins on the Edison to receive commands from the Android application, and the IoT capability of the microcontroller let us set up a wiFi connection between the user and the driving system. <br><br>
 
 Software: <br>
 
