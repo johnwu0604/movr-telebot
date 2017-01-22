@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Ringing"
-                android:textColor="@color/sinch_purple"
+                android:textColor="#ab0101"
                 android:textSize="16sp"
                 android:textAllCaps="true"
                 />
@@ -44,7 +44,7 @@
                 android:layout_marginTop="4dp"
                 android:text="00:00"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/sinch_purple"
+                android:textColor="#ab0101"
                 android:textSize="16sp"/>
 
     </LinearLayout>
