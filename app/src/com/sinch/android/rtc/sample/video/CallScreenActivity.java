@@ -135,10 +135,10 @@ public class CallScreenActivity extends BaseActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
-                    socket.emit("left", 1);
+                    socket.emit("right", 1);
                 }
                 if(event.getAction() == MotionEvent.ACTION_UP){
-                    socket.emit("left", 0);
+                    socket.emit("right", 0);
                 }
                 return true;
             }
@@ -151,10 +151,10 @@ public class CallScreenActivity extends BaseActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction() == MotionEvent.ACTION_DOWN){
-                    socket.emit("right", 1);
+                    socket.emit("left", 1);
                 }
                 if(event.getAction() == MotionEvent.ACTION_UP){
-                    socket.emit("right", 0);
+                    socket.emit("left", 0);
                 }
                 return true;
             }
