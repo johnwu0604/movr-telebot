@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/JohnWu/Documents/Projects/telebot/app/libs/sinch-android-rtc-3.9.10.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6b90fc6988643fb7d173d85a3c52227778978715">
+        <dex dex="/Users/JohnWu/Documents/Projects/telebot/app/build/intermediates/pre-dexed/debug/sinch-android-rtc-3.9.10-c7babe6a6148c43b098fab51e4e2fdc91cfea03b.jar" />
+    </item>
+
+</items>
