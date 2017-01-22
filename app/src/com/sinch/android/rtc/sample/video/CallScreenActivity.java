@@ -115,7 +115,6 @@ public class CallScreenActivity extends BaseActivity {
         }catch(Exception e){
 
         }
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.callscreen);
 
@@ -163,26 +162,19 @@ public class CallScreenActivity extends BaseActivity {
         });
 
         // forward logic
-//        forwardButton.setOnTouchListener(new View.OnTouchListener() {
-//
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                if(event.getAction() == MotionEvent.ACTION_DOWN){
-//                    socket.emit("straight", 1);
-//                }
-//                if(event.getAction() == MotionEvent.ACTION_UP){
-//                    socket.emit("straight", 0);
-//                }
-//                return true;
-//            }
-//
-//        });
+        forwardButton.setOnTouchListener(new View.OnTouchListener() {
 
-        forwardButton.setOnClickListener(new OnClickListener() {
             @Override
-            public void onClick(View v) {
-                socket.emit("straight", 1);
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_DOWN){
+                    socket.emit("straight", 1);
+                }
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    socket.emit("straight", 0);
+                }
+                return true;
             }
+
         });
 
         endCallButton.setOnClickListener(new OnClickListener() {
