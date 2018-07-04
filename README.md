@@ -1,13 +1,13 @@
-#MOVR Telebot
+# MOVR Telebot
 <p>A project for Concordia Hackathon 2017</p>
 
-#Inspiration
+## Inspiration
 <p>Have you ever experienced leaving home and miss your family, your pet, and especially your room!? Worry not, we feel you. That's when the MOVR Telebot comes in. In fact, we watched Modern Family (link) and thought the idea was inspiring. When video-calling your loved ones, MOVR lets you wander around the room via an enhanced UX design. Whether it's back home or on a beach in Mexico, it makes long-distance feel just a little bit closer.</p>
 
-#What it does
+## What it does
 <p>Our MOVR Telebot project is a combination of an Android application, an Intel Edison-based apparatus. When connected in a video call, callers on both ends can control the robot remotely through the application. The communication between the application and the microcontroller is established on Wi-Fi.</p>
 
-#How we built it
+## How we built it
 <p>The basis of our application begins with the Intel Edison board which we programmed using node.js.<br><br>
 
 Hardware: <br>
